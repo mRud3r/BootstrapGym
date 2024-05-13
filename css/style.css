@@ -8,6 +8,15 @@
 
 /* MAIN SECTION */
 .main-img {
-  background-image: url(/img/young-fitness-man-studio.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(/img/young-fitness-man-studio.jpg);
   background-size: cover;
+  background-position: center;
+  height: 50vw;
+  max-height: 800px;
+  min-height: 300px;
+}
+
+/* DETAILS SECTION */
+.details {
+  margin-top: -50px;
 }/*# sourceMappingURL=style.css.map */
