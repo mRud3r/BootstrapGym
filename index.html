@@ -12,12 +12,12 @@
 			<script src="https://kit.fontawesome.com/81f1cb6539.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body data-bs-theme="dark">
+	<body data-bs-theme="light">
 		<!-- ============================= NAVBAR ============================= -->
 
-		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-3 shadow">
 			<div class="container-lg">
-				<a class="navbar-brand" href="#">Navbar</a>
+				<a class="navbar-brand" href="#">GymStrap</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -30,10 +30,11 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav ms-auto">
-						<a class="nav-link" href="#">Home</a>
-						<a class="nav-link" href="#">Features</a>
-						<a class="nav-link" href="#">Pricing</a>
-						<a class="nav-link" href="#">Disabled</a>
+						<a class="nav-link" href="#HOME">Home</a>
+						<a class="nav-link" href="#ABOUT">About</a>
+						<a class="nav-link" href="#SERVICES">Services</a>
+						<a class="nav-link" href="#PRICING">Pricing</a>
+						<a class="nav-link" href="#CONTACT">Contact</a>
 					</div>
 				</div>
 			</div>
@@ -42,9 +43,9 @@
 		<!-- ============================= MAIN SECTION ============================= -->
 
 		<main>
-			<div class="main-img container-fluid">
+			<div id="HOME" class="main-img container-fluid">
 				<div class="row">
-					<div class="col-lg-10 container-lg text-light">
+					<div class="col-lg-8 container-lg text-light">
 						<p>Gym Fitness Club</p>
 						<h1>
 							Be Strong <br />
@@ -110,7 +111,7 @@
 
 		<!-- ============================= MORE SECTION ============================= -->
 
-		<section class="more py5">
+		<section id="ABOUT" class="more py5">
 			<div class="container py-5">
 				<div class="row py-5">
 					<div class="col-lg-6 mb-3">
@@ -152,7 +153,7 @@
 
 		<!-- ============================= SERVICE SECTION ============================= -->
 
-		<section class="services py-5">
+		<section id="SERVICES" class="services py-5">
 			<div class="container py-5 text-center">
 				<h1>Our Services</h1>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -169,7 +170,7 @@
 					<div class="col-lg-4">
 						<div class="card border-0 p-3">
 							<div class="card-body">
-								<i class="fa-solid fa-dumbbell fs-2"></i>
+								<i class="fa-solid fa-weight-scale fs-2"></i>
 								<h5 class="py-3">Lorem ipsum dolor</h5>
 								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 							</div>
@@ -178,7 +179,7 @@
 					<div class="col-lg-4">
 						<div class="card border-0 p-3">
 							<div class="card-body">
-								<i class="fa-solid fa-dumbbell fs-2"></i>
+								<i class="fa-solid fa-person-swimming fs-2"></i>
 								<h5 class="py-3">Lorem ipsum dolor</h5>
 								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 							</div>
@@ -211,6 +212,85 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- ============================= PRICES SECTION ============================= -->
+
+		<section id="PRICING" class="prices py-5">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="card p-3 shadow mb-5">
+							<div class="card-body">
+								<h3 class="mb-5">Basic</h3>
+								<div class="price-content d-flex">
+									<p>24/7 Gym Access</p>
+									<i class="fa-solid fa-check ms-auto fs-5 text-success"></i>
+								</div>
+								<div class="price-content d-flex">
+									<p>Unlimited Fitness Classes</p>
+									<i class="fa-solid fa-check ms-auto fs-5 text-success"></i>
+								</div>
+								<div class="price-content d-flex">
+									<p>Swimming Pool</p>
+									<i class="fa-solid fa-check ms-auto fs-5 text-success"></i>
+								</div>
+								<div class="price-content d-flex">
+									<p>Personal Trainings</p>
+									<i class="fa-solid fa-xmark ms-auto fs-5 text-danger"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="card p-3 bg-primary shadow">
+							<div class="card-body text-light">
+								<h3 class="mb-5">Premium</h3>
+								<div class="price-content d-flex">
+									<p>24/7 Gym Access</p>
+									<i class="fa-solid fa-check ms-auto fs-5"></i>
+								</div>
+								<div class="price-content d-flex">
+									<p>Unlimited Fitness Classes</p>
+									<i class="fa-solid fa-check ms-auto fs-5"></i>
+								</div>
+								<div class="price-content d-flex">
+									<p>Swimming Pool</p>
+									<i class="fa-solid fa-check ms-auto fs-5"></i>
+								</div>
+								<div class="price-content d-flex">
+									<p>Personal Trainings</p>
+									<i class="fa-solid fa-check ms-auto fs-5"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- ============================= CONTACT SECTION ============================= -->
+
+		<section id="CONTACT" class="contact py-5">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-lg-6">
+						<h3 class="mb-3">Contact Us!</h3>
+						<div class="mb-3">
+							<label for="exampleFormControlInput1" class="form-label">Email address</label>
+							<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+						  </div>
+						  <div class="mb-3">
+							<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="type message here..." rows="5"></textarea>
+						  </div>
+					</div>
+					<div class="col-lg-6">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1358.4609792415552!2d-74.00352883131286!3d40.748472262477385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259b76d1d2c45%3A0x7e24a1d8b2ae928d!2s264%2010th%20Ave%2C%20New%20York%2C%20NY%2010001%2C%20Stany%20Zjednoczone!5e0!3m2!1spl!2spl!4v1715719593745!5m2!1spl!2spl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- ============================= FOOTER ============================= -->
 
