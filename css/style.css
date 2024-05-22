@@ -16,6 +16,14 @@
   min-height: 300px;
 }
 
+.hero-text {
+  font-size: clamp(16px, 4vw, 60px);
+  font-weight: 900;
+}
+.hero-text span {
+  font-size: clamp(32px, 6vw, 86px);
+}
+
 /* DETAILS SECTION */
 .details {
   margin-top: -50px;
@@ -26,4 +34,9 @@
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(/img/pexels-olly-866027.jpg);
   background-size: cover;
   background-position: center;
+}
+
+/* FOOTER */
+footer i {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

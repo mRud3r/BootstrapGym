@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 /* MAIN SECTION */
 
 .main-img {
@@ -16,6 +17,16 @@
     max-height: 800px;
     min-height: 300px;
 }
+
+.hero-text {
+    font-size: clamp(16px, 4vw, 60px);
+    font-weight: 900;
+
+    span {
+        font-size: clamp(32px, 6vw, 86px);
+    }
+}
+
 
 /* DETAILS SECTION */
 
@@ -29,4 +40,12 @@
     background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)) ,url(/img/pexels-olly-866027.jpg);
     background-size: cover;
     background-position: center;
+}
+
+/* FOOTER */
+
+footer {
+    i {
+        cursor: pointer;
+    }
 }
