@@ -14,13 +14,33 @@
 			crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body data-bs-theme="light">
+	<body data-bs-theme="light" data-bs-spy="scroll" data-bs-target="#navigation">
 		<!-- ============================= NAVBAR ============================= -->
 
 		<nav
+			id="navigation"
 			class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-3 shadow">
 			<div class="container-lg">
-				<a class="navbar-brand fw-bold" href="#">Gym<span class="text-primary">Strap</span></a>
+				<a class="navbar-brand fw-bold" href="#"
+					>Gym<span class="text-primary">Strap</span></a
+				>
+				<div class="dropdown me-auto ms-2">
+					<button
+						class="btn dropdown-toggle"
+						type="button"
+						data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<i class="fa-solid fa-circle-half-stroke"></i>
+					</button>
+					<ul class="dropdown-menu">
+						<a class="light-toggle dropdown-item disabled" href="#">
+							<i class="fa-solid fa-sun me-1"></i> Light Mode</a
+						>
+						<a class="dark-toggle dropdown-item active" href="#">
+							<i class="fa-solid fa-moon me-2"></i> Dark Mode</a
+						>
+					</ul>
+				</div>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -33,11 +53,11 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav ms-auto">
-						<a class="nav-link" href="#HOME">Home</a>
-						<a class="nav-link" href="#ABOUT">About</a>
-						<a class="nav-link" href="#SERVICES">Services</a>
-						<a class="nav-link" href="#PRICING">Pricing</a>
-						<a class="nav-link" href="#CONTACT">Contact</a>
+						<a class="nav-link rounded-pill px-3" href="#HOME">Home</a>
+						<a class="nav-link rounded-pill px-3" href="#ABOUT">About</a>
+						<a class="nav-link rounded-pill px-3" href="#SERVICES">Services</a>
+						<a class="nav-link rounded-pill px-3" href="#PRICING">Pricing</a>
+						<a class="nav-link rounded-pill px-3" href="#CONTACT">Contact</a>
 					</div>
 				</div>
 			</div>
@@ -46,13 +66,15 @@
 		<!-- ============================= MAIN SECTION ============================= -->
 
 		<main>
-			<div id="HOME" class="main-img container-fluid d-flex justify-content-center align-items-center">
-					<div class="container-lg text-light mb-5">
-						<h1 class="hero-text">
-							Start your fitness journey <br>
-							<span class="text-primary">With us!</span>
-						</h1>
-					</div>
+			<div
+				id="HOME"
+				class="main-img container-fluid d-flex justify-content-center align-items-center">
+				<div class="container-lg text-light mb-5">
+					<h1 class="hero-text">
+						Start your fitness journey <br />
+						<span class="text-primary">With us!</span>
+					</h1>
+				</div>
 			</div>
 		</main>
 
@@ -68,7 +90,8 @@
 								<p>
 									Our state-of-the-art cardio machines, advanced strength
 									training equipment, and comprehensive free weight selection
-									cater to all fitness levels. will help you to rejuvenate your body and improve your performance
+									cater to all fitness levels. will help you to rejuvenate your
+									body and improve your performance
 								</p>
 							</div>
 						</div>
@@ -112,14 +135,18 @@
 						<img
 							src="img/pexels-willpicturethis-1954524 (1).jpg"
 							class="img-fluid"
-							alt="" />
+							alt="man running on a treadmill" />
 					</div>
 					<div class="col-lg-6">
-						<h2 class="pb-3">
-							Achieve Your Fitness Goals
-						</h2>
+						<h2 class="pb-3">Achieve Your Fitness Goals</h2>
 						<p class="pb-3">
-							We  will help you reach your fitness goals with personalized workout and nutrition plans tailored to your needs. <br> Our modern, high-quality equipment ensures optimal results, and our diverse classes keep you engaged and motivated. With continuous guidance and support from our dedicated staff, you’ll stay on track and achieve your fitness aspirations. <br> Join our gym today and transform your goals into reality.
+							We will help you reach your fitness goals with personalized
+							workout and nutrition plans tailored to your needs. <br />
+							Our modern, high-quality equipment ensures optimal results, and
+							our diverse classes keep you engaged and motivated. With
+							continuous guidance and support from our dedicated staff, you’ll
+							stay on track and achieve your fitness aspirations. <br />
+							Join our gym today and transform your goals into reality.
 						</p>
 						<button class="btn btn-primary" type="submit">Join Us</button>
 					</div>
@@ -133,9 +160,11 @@
 			<div class="container py-5">
 				<div class="row py-5">
 					<div class="col-lg-8 m-auto text-light text-center">
-						<p>Join today and take advantage of our limited-time offer! </p>
+						<p>Join today and take advantage of our limited-time offer!</p>
 						<h1>Only now Basic and Premium subscription plan 25% OFF</h1>
-						<button type="button" class="btn btn-primary mt-3 px-4">Enroll</button>
+						<button type="button" class="btn btn-primary mt-3 px-4">
+							Enroll
+						</button>
 					</div>
 				</div>
 			</div>
@@ -146,14 +175,17 @@
 		<section id="SERVICES" class="services py-5">
 			<div class="container py-5 text-center">
 				<h1>Our Services</h1>
-				<p>We offer more than 30 different fitness classes and unique exercise spaces</p>
+				<p>
+					We offer more than 30 different fitness classes and unique exercise
+					spaces
+				</p>
 				<div class="row pt-5">
 					<div class="col-lg-4">
 						<div class="card border-0 p-3">
 							<div class="card-body">
 								<i class="fa-solid fa-dumbbell fs-2"></i>
 								<h5 class="py-3">Free weights zone</h5>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+								<p>Benefit from a large number of weights adapted to each level</p>
 							</div>
 						</div>
 					</div>
@@ -162,7 +194,7 @@
 							<div class="card-body">
 								<i class="fa-solid fa-fire-flame-curved fs-2"></i>
 								<h5 class="py-3">Cardio zone</h5>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+								<p>More than 20 different machines to perform cardio training</p>
 							</div>
 						</div>
 					</div>
@@ -171,18 +203,18 @@
 							<div class="card-body">
 								<i class="fa-solid fa-person-swimming fs-2"></i>
 								<h5 class="py-3">Swimming pool</h5>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+								<p>Full-size Olympic swimming pool at your disposal</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row pt-5">
+				<div class="row pt-3">
 					<div class="col-lg-4">
 						<div class="card border-0 p-3">
 							<div class="card-body">
 								<i class="fa-solid fa-person-running fs-2"></i>
 								<h5 class="py-3">Stretching area</h5>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+								<p>A variety of stretching equipment</p>
 							</div>
 						</div>
 					</div>
@@ -191,7 +223,7 @@
 							<div class="card-body">
 								<i class="fa-solid fa-spa fs-2"></i>
 								<h5 class="py-3">SPA section</h5>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+								<p>Professional relaxation treatments</p>
 							</div>
 						</div>
 					</div>
@@ -200,7 +232,7 @@
 							<div class="card-body">
 								<i class="fa-solid fa-heart fs-2"></i>
 								<h5 class="py-3">Health zone</h5>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+								<p>Professional machines to maintain a healthy spine</p>
 							</div>
 						</div>
 					</div>
@@ -214,104 +246,50 @@
 			<div class="container-fluid pb-5">
 				<h1 class="text-center">Our Gallery</h1>
 				<p class="text-center">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					See what training looks like at our gym
 				</p>
 				<div class="row pt-5 g-0">
 					<div class="col-lg-3 col-md-4 col-sm-6">
 						<img
 							src="img/pexels-823sl-371049 (1).jpg"
-							data-bs-toggle="modal"
-							data-bs-target="#examplemodal"
 							class="img-fluid"
-							alt="" />
+							alt="woman doing squats with a barbell " />
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-6">
-						<img
-							src="img/pexels-olly-864939.jpg"
-							data-bs-toggle="modal"
-							data-bs-target="#examplemodal"
-							class="img-fluid"
-							alt="" />
+						<img src="img/pexels-olly-864939.jpg" class="img-fluid" alt="group yoga classes" />
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-6">
-						<img
-							src="img/pexels-olly-866027.jpg"
-							data-bs-toggle="modal"
-							data-bs-target="#examplemodal"
-							class="img-fluid"
-							alt="" />
+						<img src="img/pexels-olly-866027.jpg" class="img-fluid" alt="two women doing a joint training session" />
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-6">
 						<img
 							src="img/pexels-victorfreitas-841130 (1).jpg"
-							data-bs-toggle="modal"
-							data-bs-target="#examplemodal"
 							class="img-fluid"
-							alt="" />
+							alt="man performing dead lift" />
 					</div>
 
-
 					<div class="col-lg-3 col-md-4 col-sm-6">
-						<img
-							src="img/pexels-pixabay-414029.jpg"
-							data-bs-toggle="modal"
-							data-bs-target="#examplemodal"
-							class="img-fluid"
-							alt="" />
+						<img src="img/pexels-pixabay-414029.jpg" class="img-fluid" alt="woman performs training with a personal trainer" />
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-6">
-						<img
-							src="img/pexels-823sl-2294403.jpg"
-							data-bs-toggle="modal"
-							data-bs-target="#examplemodal"
-							class="img-fluid"
-							alt="" />
+						<img src="img/pexels-823sl-2294403.jpg" class="img-fluid" alt="woman jumps over box" />
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-6">
-						<img
-							src="img/pexels-olly-866023.jpg"
-							data-bs-toggle="modal"
-							data-bs-target="#examplemodal"
-							class="img-fluid"
-							alt="" />
+						<img src="img/pexels-olly-866023.jpg" class="img-fluid" alt="women perform stretching together" />
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-6">
-						<img
-							src="img/pexels-olly-869243.jpg"
-							data-bs-toggle="modal"
-							data-bs-target="#examplemodal"
-							class="img-fluid"
-							alt="" />
+						<img src="img/pexels-olly-869243.jpg" class="img-fluid" alt="women doing cardio training" />
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<!-- MODAL -->
-
-		<div
-			class="modal fade mt-5"
-			id="examplemodal"
-			tabindex="-1"
-			aria-labelledby="exmo">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<img
-						src="img/young-fitness-man-studio.jpg"
-						class="img-fluid"
-						alt="" />
-				</div>
-			</div>
-		</div>
 
 		<!-- ============================= PRICES SECTION ============================= -->
 
 		<section id="PRICING" class="prices py-5">
 			<div class="container py-5">
 				<h1 class="text-center">Subscriptions</h1>
-				<p class="text-center">
-					Choose from two plans to suit your needs
-				</p>
+				<p class="text-center">Choose from two plans to suit your needs</p>
 				<div class="row pt-5">
 					<div class="col-lg-6">
 						<div class="card p-3 shadow mb-5">
@@ -343,13 +321,13 @@
 								</div>
 								<div class="price-content d-flex align-items-center mt-5">
 									<p class="fs-1 fw-bold">49$</p>
-									<p class="ms-auto fs-5"> per month</p>
+									<p class="ms-auto fs-5">per month</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<div class="card p-3 bg-primary shadow">
+						<div class="card p-3 bg-primary bg-gradient shadow">
 							<div class="card-body text-light">
 								<h3 class="mb-5">Premium</h3>
 								<div class="price-content d-flex">
@@ -378,7 +356,7 @@
 								</div>
 								<div class="price-content d-flex align-items-center mt-5">
 									<p class="fs-1 fw-bold">89$</p>
-									<p class="ms-auto fs-5"> per month</p>
+									<p class="ms-auto fs-5">per month</p>
 								</div>
 							</div>
 						</div>
@@ -394,27 +372,30 @@
 				<div class="row">
 					<div class="col-lg-6 mb-5">
 						<h3 class="mb-3">Contact Us!</h3>
-						<div class="mb-3">
-							<label for="exampleFormControlInput1" class="form-label"
-								>Email address</label
-							>
-							<input
-								type="email"
-								class="form-control"
-								id="exampleFormControlInput1"
-								placeholder="name@example.com" />
-						</div>
-						<div class="mb-3">
-							<label for="exampleFormControlTextarea1" class="form-label"
-								>Example textarea</label
-							>
-							<textarea
-								class="form-control"
-								id="exampleFormControlTextarea1"
-								placeholder="type message here..."
-								rows="5"></textarea>
-						</div>
-						<button class="btn btn-primary" type="submit">Submit</button>
+						<form>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label"
+									>Email address</label
+								>
+								<input
+									type="email"
+									class="form-control"
+									id="exampleInputEmail1"
+									aria-describedby="emailHelp"
+									placeholder="name@email.com" />
+							</div>
+							<div class="mb-3">
+								<label for="exampleFormControlTextarea1" class="form-label"
+									>Leave your message</label
+								>
+								<textarea
+									class="form-control"
+									id="exampleFormControlTextarea1"
+									placeholder="write your message here..."
+									rows="6"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
 					</div>
 					<div class="col-lg-6">
 						<h3>Adress</h3>
@@ -434,14 +415,12 @@
 
 		<!-- ============================= FOOTER ============================= -->
 
-		<footer class="bg-primary text-light">
+		<footer class="bg-primary bg-gradient text-light">
 			<div class="container py-3">
 				<div class="row py-3">
 					<div class="col-lg-6">
 						<h4>GymStrap</h4>
-						<p class="mt-4">
-							Follow us on socials!
-						</p>
+						<p class="mt-4">Follow us on socials!</p>
 						<i class="fa-brands fa-facebook me-2 fs-4"></i>
 						<i class="fa-brands fa-instagram m-2 fs-4"></i>
 						<i class="fa-brands fa-x-twitter m-2 fs-4 mb-5"></i>
